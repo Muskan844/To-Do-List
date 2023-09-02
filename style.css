@@ -1,0 +1,95 @@
+#todos{
+   border: 3px solid rgba(57,129,169, 1);
+   border-radius: 10px;
+   width:100%;
+   font-family: 'Mukta', sans-serif;
+}
+#todos > h1 {
+  border-bottom:1px solid black;
+  margin-top:10px;
+  padding: 10px 20px 5px 30px;
+}
+
+.addtodo{
+    padding:10px 15px;
+    display: flex;
+    align-items: flex-end;
+}
+#newtodo{
+   flex:11;
+   border: none;
+   padding:5px ;
+   margin: 0px;
+   font-size:1em;
+   width: 80%;
+   border-bottom: 2px solid rgb(162, 166, 173);
+   transition: border  linear 0.5s;
+   webkit-transition: border linear 0.5s;
+}
+
+.addtodo input[type=text]:focus {
+   outline:none;
+   border-bottom: 5px solid pink;
+   background-color: rgb(230, 242, 255);
+   border-radius:10px;
+  
+}
+.addtodo > button{
+    flex:1;
+    margin: 5px 5px 5px 10px;
+    color:white;
+    background-color: rgba(57,129,169, 0.9) ;
+    font-size:1em;
+    padding:4px 6px;
+    border-radius: 8px;
+    
+}
+#todolist{
+    padding:0;
+    margin: 0;
+}
+
+#todolist > li{
+  display: flex;
+  align-items: center;
+
+  padding:10px 5px;
+  margin:0px;
+  list-style:none;
+}
+#todolist > li > input[type=checkbox], #todolist>li>label{
+    padding: 5px 10px;
+}
+
+#todoList > li > input[type=checkbox] {
+    flex: 0.1;
+}  
+#todolist>li>label{
+    flex:11;
+}
+#todoList > li > button {
+    flex: 1;
+    margin: 5px;
+    
+} 
+#todoList > li > input[type=text] {
+    flex: 10;
+    margin: 5px 10px;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+.checked>label{
+    text-decoration: line-through;
+}
+.delete{
+    color:white;
+    background-color: rgba(57,129,169, 0.9) ;
+    font-size:1em;
+    padding:4px 9px;
+    border-radius: 8px;
+}
+
+
+
+
